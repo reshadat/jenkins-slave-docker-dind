@@ -5,7 +5,6 @@ COPY --from=maven /usr/share/maven /usr/share/maven
 COPY --from=maven /usr/bin/curl /usr/bin/curl
 
 ENV MAVEN_HOME=/usr/share/maven
-ENV MAVEN_CONFIG=/home/jenkins/.m2
 ENV PATH "$PATH:/usr/share/maven/bin/"
 
 
